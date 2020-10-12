@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object</title>
+    <script>
+        var arr1 = [{ "fname": "Rajat", "sname": "Singh", "dob": "05-06-1997" },
+        { "fname": "xyzz", "sname": "aprs", "dob": "05-06-1996" },
+        { "fname": "klpo", "sname": "Sdfg", "dob": "05-06-2020" },
+        { "fname": "trpc", "sname": "jsdp", "dob": "05-06-2019" }];
+        var i = 0;
+        document.write(`<table>`);
+        document.write(`<tr>`)
+        document.write(`<td><h3> First name </h3></td>`);
+        document.write(`<td><h3> lastname </h3></td>`);
+        document.write(`<td><h3>  DOB </h3> </td>`);
+        document.write(`</tr>`);
+        for (var i = 0; i < arr1.length; i++) {
+
+            document.write(`<tr>`)
+            document.write(`<td><p> ${arr1[i].fname}</p> </td>`);
+            document.write(`<td><p> ${arr1[i].sname}</p> </td>`);
+            document.write(`<td><p> ${arr1[i].dob}<p> </td>`);
+            document.write(`</tr>`);
+        }
+        document.write(`</table>`);
+    </script>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: auto;
+            width: 50%;
+        }
+        td,tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 3% 3%;
+            padding: 2%;
+        }
+        p{
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
